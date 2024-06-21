@@ -1,6 +1,4 @@
-/* URL:
- * https://www.hackerrank.com/challenges/one-month-preparation-kit-two-arrays/problem
- */
+/* URL: https://www.hackerrank.com/challenges/one-month-preparation-kit-two-arrays/problem */
 
 #include <bits/stdc++.h>
 
