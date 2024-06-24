@@ -1,4 +1,4 @@
-/* URL: https://leetcode.com/problems/counting-valleys */
+/* URL: https://www.hackerrank.com/challenges/counting-valleys */
 
 #include <bits/stdc++.h>
 

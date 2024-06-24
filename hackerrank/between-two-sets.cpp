@@ -1,4 +1,4 @@
-/* URL: https://leetcode.com/problems/between-two-sets */
+/* URL: https://www.hackerrank.com/challenges/between-two-sets */
 
 #include <bits/stdc++.h>
 

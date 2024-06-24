@@ -1,4 +1,4 @@
-/* URL: https://leetcode.com/problems/day-of-the-programmer */
+/* URL: https://www.hackerrank.com/challenges/day-of-the-programmer */
 
 #include <bits/stdc++.h>
 
