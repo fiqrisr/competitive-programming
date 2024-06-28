@@ -9,10 +9,11 @@ function count(str: string): string | string[] {
     max = chars[char] > max ? chars[char] : max;
   }
 
-  const res = Object.entries(chars).filter(([, count]) => count === max).map(([char]) => char);
+  const res = Object.entries(chars)
+    .filter(([, count]) => count === max)
+    .map(([char]) => char);
 
-  if (res.length === 1)
-    return res[0];
+  if (res.length === 1) return res[0];
 
   return res;
 }
