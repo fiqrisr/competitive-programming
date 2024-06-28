@@ -4,26 +4,22 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    int maximumWealth(vector<vector<int>> &accounts)
-    {
-        int res = 0;
+  int maximumWealth(vector<vector<int>> &accounts) {
+    int res = 0;
 
-        for (int i = 0; i < accounts.size(); i++)
-        {
-            int sum = 0;
+    for (int i = 0; i < accounts.size(); i++) {
+      int sum = 0;
 
-            for (int j = 0; j < accounts[i].size(); j++)
-            {
-                sum += accounts[i][j];
-            }
+      for (int j = 0; j < accounts[i].size(); j++) {
+        sum += accounts[i][j];
+      }
 
-            if (sum > res)
-                res = sum;
-        }
-
-        return res;
+      if (sum > res)
+        res = sum;
     }
+
+    return res;
+  }
 };

@@ -5,36 +5,31 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    bool isValid(string s)
-    {
-        stack<char> parentheses;
+  bool isValid(string s) {
+    stack<char> parentheses;
 
-        for (int i = 0; i < s.size(); i++)
-        {
-            if (s[i] == '(' || s[i] == '{' || s[i] == '[')
-                parentheses.push(s[i]);
-            else
-            {
-                if (!parentheses.size())
-                    return false;
+    for (int i = 0; i < s.size(); i++) {
+      if (s[i] == '(' || s[i] == '{' || s[i] == '[')
+        parentheses.push(s[i]);
+      else {
+        if (!parentheses.size())
+          return false;
 
-                char opening = parentheses.top();
+        char opening = parentheses.top();
 
-                if (opening == '(' && s[i] == ')' ||
-                    opening == '{' && s[i] == '}' ||
-                    opening == '[' && s[i] == ']')
-                    parentheses.pop();
-                else
-                    return false;
-            }
-        }
-
-        if (parentheses.size())
-            return false;
-
-        return true;
+        if (opening == '(' && s[i] == ')' || opening == '{' && s[i] == '}' ||
+            opening == '[' && s[i] == ']')
+          parentheses.pop();
+        else
+          return false;
+      }
     }
+
+    if (parentheses.size())
+      return false;
+
+    return true;
+  }
 };

@@ -4,20 +4,17 @@
 
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    ListNode *middleNode(ListNode *head)
-    {
-        ListNode *mid = head;
-        ListNode *end = head;
+  ListNode *middleNode(ListNode *head) {
+    ListNode *mid = head;
+    ListNode *end = head;
 
-        while (end != NULL && end->next != NULL)
-        {
-            mid = mid->next;
-            end = end->next->next;
-        }
-
-        return mid;
+    while (end != NULL && end->next != NULL) {
+      mid = mid->next;
+      end = end->next->next;
     }
+
+    return mid;
+  }
 };
